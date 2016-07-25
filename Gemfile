@@ -6,7 +6,7 @@ gem 'rails', '5.0.0'
 # Use Puma as the app server
 gem 'puma', '3.4.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0.5'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
@@ -27,6 +27,11 @@ gem 'jbuilder', '2.4.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Makes your rails console look pretty -> mine doesn't seem to work
+gem 'pry'
+
+
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
@@ -52,6 +57,7 @@ group :test do
 end
 
 group :production do
+	# install pg only on production environment
   gem 'pg', '0.18.4'
 end
 
