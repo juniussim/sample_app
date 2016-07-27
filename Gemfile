@@ -30,9 +30,10 @@ gem 'jbuilder', '2.4.1'
 
 # Makes your rails console look pretty -> mine doesn't seem to work
 gem 'pry'
-
 # Bootstrap sass gem
 gem 'bootstrap-sass', '3.3.6'
+# To make the password digest, has_secure_password uses a state-of-the-art hash function called bcrypt.
+gem 'bcrypt',         '3.1.11'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
