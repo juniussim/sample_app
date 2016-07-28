@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+// how da hell does this work -> we did not install any gems right how does it know what bootstrap javascript is

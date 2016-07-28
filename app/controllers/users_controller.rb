@@ -11,6 +11,8 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)    # Not the final implementation!
 		if @user.save
+			# to automatically log in users
+			log_in @user
 			# Rails way to display a temporary message is to use a special method called the flash, which we can treat like a hash. Rails adopts the convention of a :success key for a message indicating a successful result
 			flash[:success] = "Welcome to the Sample App!"
 			redirect_to @user
