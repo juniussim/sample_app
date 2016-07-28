@@ -1,6 +1,6 @@
 module SessionsHelper
 	# this module has been included in the application controller
-	# putting functions in helpers allow us to reuse these methods in all controllers as well as in all views, whereas only including it within a method in a controller causes the code not to be reusable
+	# putting functions in helpers allow us to reuse these methods in all controllers as well as in all views, whereas only including it within a method in a controller causes the code not to be resu
 	# Logs in the given user.
   def log_in(user)
     session[:user_id] = user.id
